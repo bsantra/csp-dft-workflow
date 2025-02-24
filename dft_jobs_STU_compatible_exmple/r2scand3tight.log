@@ -1,0 +1,31 @@
+
+Running subjobs on hosts:
+  compute-16core-64gb-preemptible (Max: 100)
+Number of jobs:       4
+Max retries per job:  5
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 3 | launched  e71acf58-f2d9-11ef-bc68-42010a668048 r2scand3tight_Pna21_SG_ACETAC_1_18_0_scf_0 compute-16core-64gb-preemptible []
+0 2 2 | launched  e71ad2a3-f2d9-11ef-84c3-42010a668048 r2scand3tight_P21c_TSI_ACETAC_3_1750_1_scf_0 compute-16core-64gb-preemptible []
+0 3 1 | launched  e71f7a12-f2d9-11ef-a729-42010a668048 r2scand3tight_P-1_ITTT_ACETAC_3_409_2_scf_0 compute-16core-64gb-preemptible []
+0 4 0 | launched  e71f7aa5-f2d9-11ef-9f73-42010a668048 r2scand3tight_Cc_GT_ACETAC_1_25_3_scf_0 compute-16core-64gb-preemptible []
+1 3 0 | finished  e71f7a12-f2d9-11ef-a729-42010a668048 r2scand3tight_P-1_ITTT_ACETAC_3_409_2_scf_0 compute-16core-64gb-preemptible []
+2 2 0 | finished  e71f7aa5-f2d9-11ef-9f73-42010a668048 r2scand3tight_Cc_GT_ACETAC_1_25_3_scf_0 compute-16core-64gb-preemptible []
+3 1 0 | finished  e71ad2a3-f2d9-11ef-84c3-42010a668048 r2scand3tight_P21c_TSI_ACETAC_3_1750_1_scf_0 compute-16core-64gb-preemptible []
+4 0 0 | finished  e71acf58-f2d9-11ef-bc68-42010a668048 r2scand3tight_Pna21_SG_ACETAC_1_18_0_scf_0 compute-16core-64gb-preemptible []
+
+All jobs have completed.
+
+4 of 4 job(s) succeeded; 0 job(s) failed.
+
