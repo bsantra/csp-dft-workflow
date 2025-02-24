@@ -6,6 +6,8 @@ Download from https://github.com/bsantra/csp-dft-workflow
 csp-df-workflow folder contains 
     csp-df-workflow/dft_input: contains configuration, pseudopotential, and analysis scripts
     csp-df-workflow/dft_jobs: your working directory, contains job submission scripts.
+        Computer architecture (HOST, SUBHOST, Number of cores per subjobs) and the SCHRODINGER path is set in: 
+        csp-df-workflow/dft_jobs/periodic_dft_driver.sh
 
 #to run
 cd csp-df-workflow/dft_jobs
