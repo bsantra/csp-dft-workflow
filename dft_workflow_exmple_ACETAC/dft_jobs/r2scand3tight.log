@@ -1,0 +1,39 @@
+
+Running subjobs on hosts:
+  compute-16core-64gb-preemptible (Max: 100)
+Number of jobs:       8
+Max retries per job:  5
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 7 | launched  da1e1f25-f26f-11ef-96c8-42010a668048 r2scand3tight_Pna21_SG_ACETAC_1_18_0_scf_0 compute-16core-64gb-preemptible []
+0 2 6 | launched  da456403-f26f-11ef-8ec3-42010a668048 r2scand3tight_P21c_TSI_ACETAC_3_1750_1_scf_0 compute-16core-64gb-preemptible []
+0 3 5 | launched  da4e03fa-f26f-11ef-bcd4-42010a668048 r2scand3tight_P21c_TSI_ACETAC_1_2249_2_scf_0 compute-16core-64gb-preemptible []
+0 4 4 | launched  da6c1d4d-f26f-11ef-9def-42010a668048 r2scand3tight_P21c_TSI_ACETAC_1_1752_3_scf_0 compute-16core-64gb-preemptible []
+0 5 3 | launched  dd9f1c91-f26f-11ef-b36e-42010a668048 r2scand3tight_Pna21_SG_ACETAC_3_35_4_scf_0 compute-16core-64gb-preemptible []
+0 6 2 | launched  de1c7c2c-f26f-11ef-ad4c-42010a668048 r2scand3tight_P-1_ITTT_ACETAC_3_409_5_scf_0 compute-16core-64gb-preemptible []
+0 7 1 | launched  ddfe5af5-f26f-11ef-95ca-42010a668048 r2scand3tight_Cc_GT_ACETAC_1_25_6_scf_0 compute-16core-64gb-preemptible []
+0 8 0 | launched  de24f44a-f26f-11ef-a8af-42010a668048 r2scand3tight_Pbcn_GIG_ACETAC_3_9_7_scf_0 compute-16core-64gb-preemptible []
+1 7 0 | finished  de1c7c2c-f26f-11ef-ad4c-42010a668048 r2scand3tight_P-1_ITTT_ACETAC_3_409_5_scf_0 compute-16core-64gb-preemptible []
+2 6 0 | finished  ddfe5af5-f26f-11ef-95ca-42010a668048 r2scand3tight_Cc_GT_ACETAC_1_25_6_scf_0 compute-16core-64gb-preemptible []
+3 5 0 | finished  da456403-f26f-11ef-8ec3-42010a668048 r2scand3tight_P21c_TSI_ACETAC_3_1750_1_scf_0 compute-16core-64gb-preemptible []
+4 4 0 | finished  da1e1f25-f26f-11ef-96c8-42010a668048 r2scand3tight_Pna21_SG_ACETAC_1_18_0_scf_0 compute-16core-64gb-preemptible []
+5 3 0 | finished  da4e03fa-f26f-11ef-bcd4-42010a668048 r2scand3tight_P21c_TSI_ACETAC_1_2249_2_scf_0 compute-16core-64gb-preemptible []
+6 2 0 | finished  dd9f1c91-f26f-11ef-b36e-42010a668048 r2scand3tight_Pna21_SG_ACETAC_3_35_4_scf_0 compute-16core-64gb-preemptible []
+7 1 0 | finished  da6c1d4d-f26f-11ef-9def-42010a668048 r2scand3tight_P21c_TSI_ACETAC_1_1752_3_scf_0 compute-16core-64gb-preemptible []
+8 0 0 | finished  de24f44a-f26f-11ef-a8af-42010a668048 r2scand3tight_Pbcn_GIG_ACETAC_3_9_7_scf_0 compute-16core-64gb-preemptible [compute-16core-64gb-preemptible-459]
+
+All jobs have completed.
+
+8 of 8 job(s) succeeded; 0 job(s) failed.
+

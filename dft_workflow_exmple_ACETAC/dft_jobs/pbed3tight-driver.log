@@ -1,0 +1,64 @@
+Job information
+JobId ..................................... d4f1a6da-f26d-11ef-9d52-42010a660005
+Name ................................................................ pbed3tight
+Program ........................................................... Periodic DFT
+Version ....................................................... 2024-3 build 139
+Host .............................................. frontend.virtual-cluster.lan
+Dir ......... /personal-installations/santra/dft_workflow_exmple_ACETAC/dft_jobs
+HostEntry ................................................ driver-4core-standard
+Queue ..................................................................... None
+JobHost ............................ driver-4core-standard-1.virtual-cluster.lan
+JobDir ............... /scratch/santra/jobs/d4f1a6da-f26d-11ef-9d52-42010a660005
+JobSchrodinger ...... /opt/schrodinger/suite/suitefs/suites/suite2024-3-build139
+Commandline  /opt/schrodinger/suite/suitefs/suites/suite2024-3-build139/run
+periodic_dft_gui_dir/periodic_dft_driver.py -cfg_file pbed3tight.cfg pbed3tight-
+in.maegz -TPP 16 -JOBNAME pbed3tight -HOST driver-4core-standard -SUBHOST
+compute-16core-64gb-preemptible:100 -max_retries 5 -qargs=--no-requeue
+-save_failures -npools 1
+StartTime .................................................. 2025-02-24-05:11:44
+JobHostStartTime ...................................... Mon Feb 24 05:11:47 2025
+
+Command line options:
+OMP .......................................................................... 1
+TPP ......................................................................... 16
+cfg_file ........................................................ pbed3tight.cfg
+gpu ...................................................................... False
+input_file ................................................. pbed3tight-in.maegz
+max_retries .................................................................. 5
+md_chkpoint ............................................................... None
+md_trj_file ............................................................... None
+nband ..................................................................... None
+nimage .................................................................... None
+npools ....................................................................... 1
+ntg ....................................................................... None
+qargs ............................................................. --no-requeue
+save_failures ............................................................. True
+save_props ............................................................... False
+write_only ............................................................... False
+Using run_qe from /home/santra/.schrodinger/2024-3/run_qe
+Reuse driver host: False
+pbed3tight_P21c_TSI_ACETAC_3_1750_0: Adding VC-RELAX step
+pbed3tight_Pna21_SG_ACETAC_1_18_1: Adding VC-RELAX step
+pbed3tight_Cc_GT_ACETAC_1_25_2: Adding VC-RELAX step
+pbed3tight_Pbcn_GIG_ACETAC_3_9_3: Adding VC-RELAX step
+pbed3tight_P-1_ITTT_ACETAC_3_409_4: Adding VC-RELAX step
+pbed3tight_Pna21_SG_ACETAC_3_35_5: Adding VC-RELAX step
+pbed3tight_P21c_TSI_ACETAC_1_2249_6: Adding VC-RELAX step
+pbed3tight_P21c_TSI_ACETAC_1_1752_7: Adding VC-RELAX step
+pbed3tight_P21c_TSI_ACETAC_3_1750_0: VC-RELAX: Generating input...
+pbed3tight_Pna21_SG_ACETAC_1_18_1: VC-RELAX: Generating input...
+pbed3tight_Cc_GT_ACETAC_1_25_2: VC-RELAX: Generating input...
+pbed3tight_Pbcn_GIG_ACETAC_3_9_3: VC-RELAX: Generating input...
+pbed3tight_P-1_ITTT_ACETAC_3_409_4: VC-RELAX: Generating input...
+pbed3tight_Pna21_SG_ACETAC_3_35_5: VC-RELAX: Generating input...
+pbed3tight_P21c_TSI_ACETAC_1_2249_6: VC-RELAX: Generating input...
+pbed3tight_P21c_TSI_ACETAC_1_1752_7: VC-RELAX: Generating input...
+pbed3tight_Cc_GT_ACETAC_1_25_2: VC-RELAX: Finalizing this step...
+pbed3tight_P-1_ITTT_ACETAC_3_409_4: VC-RELAX: Finalizing this step...
+pbed3tight_P21c_TSI_ACETAC_1_2249_6: VC-RELAX: Finalizing this step...
+pbed3tight_P21c_TSI_ACETAC_3_1750_0: VC-RELAX: Finalizing this step...
+pbed3tight_Pna21_SG_ACETAC_3_35_5: VC-RELAX: Finalizing this step...
+pbed3tight_Pna21_SG_ACETAC_1_18_1: VC-RELAX: Finalizing this step...
+pbed3tight_P21c_TSI_ACETAC_1_1752_7: VC-RELAX: Finalizing this step...
+pbed3tight_Pbcn_GIG_ACETAC_3_9_3: VC-RELAX: Finalizing this step...
+All done.

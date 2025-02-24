@@ -1,0 +1,64 @@
+Job information
+JobId ..................................... 55c12289-f268-11ef-a6e7-42010a660005
+Name ............................................................. r2scand3light
+Program ........................................................... Periodic DFT
+Version ....................................................... 2024-3 build 139
+Host .............................................. frontend.virtual-cluster.lan
+Dir ......... /personal-installations/santra/dft_workflow_exmple_ACETAC/dft_jobs
+HostEntry ................................................ driver-4core-standard
+Queue ..................................................................... None
+JobHost ............................ driver-4core-standard-1.virtual-cluster.lan
+JobDir ............... /scratch/santra/jobs/55c12289-f268-11ef-a6e7-42010a660005
+JobSchrodinger ...... /opt/schrodinger/suite/suitefs/suites/suite2024-3-build139
+Commandline  /opt/schrodinger/suite/suitefs/suites/suite2024-3-build139/run
+periodic_dft_gui_dir/periodic_dft_driver.py -cfg_file r2scand3light.cfg
+r2scand3light-in.maegz -TPP 16 -JOBNAME r2scand3light -HOST driver-4core-
+standard -SUBHOST compute-16core-64gb-preemptible:100 -max_retries 5
+-qargs=--no-requeue -save_failures -npools 1
+StartTime .................................................. 2025-02-24-04:32:23
+JobHostStartTime ...................................... Mon Feb 24 04:32:47 2025
+
+Command line options:
+OMP .......................................................................... 1
+TPP ......................................................................... 16
+cfg_file ..................................................... r2scand3light.cfg
+gpu ...................................................................... False
+input_file .............................................. r2scand3light-in.maegz
+max_retries .................................................................. 5
+md_chkpoint ............................................................... None
+md_trj_file ............................................................... None
+nband ..................................................................... None
+nimage .................................................................... None
+npools ....................................................................... 1
+ntg ....................................................................... None
+qargs ............................................................. --no-requeue
+save_failures ............................................................. True
+save_props ............................................................... False
+write_only ............................................................... False
+Using run_qe from /home/santra/.schrodinger/2024-3/run_qe
+Reuse driver host: False
+r2scand3light_Pna21_SG_ACETAC_1_18_0: Adding SCF step
+r2scand3light_P21c_TSI_ACETAC_3_1750_1: Adding SCF step
+r2scand3light_P21c_TSI_ACETAC_1_2249_2: Adding SCF step
+r2scand3light_P21c_TSI_ACETAC_1_1752_3: Adding SCF step
+r2scand3light_Pna21_SG_ACETAC_3_35_4: Adding SCF step
+r2scand3light_P-1_ITTT_ACETAC_3_409_5: Adding SCF step
+r2scand3light_Cc_GT_ACETAC_1_25_6: Adding SCF step
+r2scand3light_Pbcn_GIG_ACETAC_3_9_7: Adding SCF step
+r2scand3light_Pna21_SG_ACETAC_1_18_0: SCF: Generating input...
+r2scand3light_P21c_TSI_ACETAC_3_1750_1: SCF: Generating input...
+r2scand3light_P21c_TSI_ACETAC_1_2249_2: SCF: Generating input...
+r2scand3light_P21c_TSI_ACETAC_1_1752_3: SCF: Generating input...
+r2scand3light_Pna21_SG_ACETAC_3_35_4: SCF: Generating input...
+r2scand3light_P-1_ITTT_ACETAC_3_409_5: SCF: Generating input...
+r2scand3light_Cc_GT_ACETAC_1_25_6: SCF: Generating input...
+r2scand3light_Pbcn_GIG_ACETAC_3_9_7: SCF: Generating input...
+r2scand3light_Cc_GT_ACETAC_1_25_6: SCF: Finalizing this step...
+r2scand3light_P-1_ITTT_ACETAC_3_409_5: SCF: Finalizing this step...
+r2scand3light_P21c_TSI_ACETAC_1_2249_2: SCF: Finalizing this step...
+r2scand3light_P21c_TSI_ACETAC_3_1750_1: SCF: Finalizing this step...
+r2scand3light_Pna21_SG_ACETAC_3_35_4: SCF: Finalizing this step...
+r2scand3light_Pna21_SG_ACETAC_1_18_0: SCF: Finalizing this step...
+r2scand3light_P21c_TSI_ACETAC_1_1752_3: SCF: Finalizing this step...
+r2scand3light_Pbcn_GIG_ACETAC_3_9_7: SCF: Finalizing this step...
+All done.

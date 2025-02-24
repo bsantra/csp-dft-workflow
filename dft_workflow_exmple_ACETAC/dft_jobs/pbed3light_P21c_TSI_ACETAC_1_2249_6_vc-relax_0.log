@@ -1,0 +1,20 @@
+Job information
+JobId ..................................... ac8e03a7-f23f-11ef-af92-42010a668095
+Name ............................ pbed3light_P21c_TSI_ACETAC_1_2249_6_vc-relax_0
+Program ............................................ Quantum ESPRESSO executable
+Version ....................................................... 2024-3 build 139
+Host ............................... driver-4core-standard-3.virtual-cluster.lan
+Dir .................. /scratch/santra/jobs/a0ebf2a0-f23f-11ef-96c8-42010a660005
+HostEntry ...................................... compute-16core-64gb-preemptible
+Queue ..................................................................... None
+JobHost ................ compute-16core-64gb-preemptible-585.virtual-cluster.lan
+JobDir ............... /scratch/santra/jobs/ac8e03a7-f23f-11ef-af92-42010a668095
+JobSchrodinger ...... /opt/schrodinger/suite/suitefs/suites/suite2024-3-build139
+Commandline  /opt/schrodinger/suite/suitefs/suites/suite2024-3-build139/run periodic_dft_gui_dir/runner.py pw.x pbed3light_P21c_TSI_ACETAC_1_2249_6_vc-relax_0.xml -JOBNAME pbed3light_P21c_TSI_ACETAC_1_2249_6_vc-relax_0 -OMP 1 -MPICORES 16 -npools 1 -QARG --no-requeue -collect rho,dataxml -retry_preempted -wall_time 82800 -HOST compute-16core-64gb-preemptible
+StartTime .................................................. 2025-02-23-23:43:07
+JobHostStartTime ...................................... Sun Feb 23 23:43:22 2025
+Backend requested MPICORES = 16
+Hosts list:  ['compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585', 'compute-16core-64gb-preemptible-585']
+Running a subprocess:
+/home/santra/.schrodinger/2024-3/run_qe pw.x 16 1 pbed3light_P21c_TSI_ACETAC_1_2249_6_vc-relax_0.in -npools 1
+All done (exit code: 0) at Sun Feb 23 23:46:11 2025.

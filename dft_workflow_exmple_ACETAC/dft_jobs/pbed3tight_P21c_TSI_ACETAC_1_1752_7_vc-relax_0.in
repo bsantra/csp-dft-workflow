@@ -1,0 +1,123 @@
+&CONTROL
+ calculation='vc-relax'
+ disk_io='low'
+ dt=41.3414
+ etot_conv_thr=0.0001
+ forc_conv_thr=0.0008
+ input_xml_schema_file='pbed3tight_P21c_TSI_ACETAC_1_1752_7_vc-relax_0.xml'
+ iprint=100000
+ max_seconds=10000000
+ nstep=200
+ outdir='./'
+ prefix='pbed3tight_P21c_TSI_ACETAC_1_1752_7_vc-relax_0'
+ pseudo_dir='./'
+ restart_mode='from_scratch'
+ title='pbed3tight_P21c_TSI_ACETAC_1_1752_7_vc-relax_0'
+ tprnfor=.false.
+ tstress=.false.
+ verbosity='low'
+ wf_collect=.false.
+/
+&SYSTEM
+ degauss=0.01
+ dftd3_threebody=.true.
+ dftd3_version=4
+ ecutrho=400.0
+ ecutwfc=50.0
+ force_symmorphic=.false.
+ ibrav=0
+ input_dft='PBE'
+ lspinorb=.false.
+ nat=32
+ nbnd=58
+ no_t_rev=.false.
+ noinv=.false.
+ noncolin=.false.
+ nosym=.true.
+ nosym_evc=.false.
+ nspin=1
+ ntyp=3
+ occupations='smearing'
+ smearing='gaussian'
+ starting_magnetization(1)=0.0
+ starting_magnetization(2)=0.0
+ starting_magnetization(3)=0.0
+ tot_charge=0.0
+ tot_magnetization=-10000.0
+ use_all_frac=.false.
+ vdw_corr='DFT-D3'
+/
+&ELECTRONS
+ conv_thr=1e-06
+ diago_cg_maxiter=20
+ diago_full_acc=.false.
+ diago_thr_init=0.0
+ diagonalization='davidson'
+ electron_maxstep=200
+ mixing_beta=0.2
+ mixing_mode='plain'
+ mixing_ndim=8
+ tbeta_smoothing=.false.
+ tq_smoothing=.false.
+ tqr=.false.
+/
+&IONS
+ delta_t=1.0
+ ion_dynamics='bfgs'
+ ion_temperature='rescale-v'
+ nraise=1
+ pot_extrapolation='atomic'
+ refold_pos=.false.
+ tempw=300.0
+ tolp=100.0
+ wfc_extrapolation='none'
+/
+&CELL
+ cell_dynamics='bfgs'
+ cell_factor=2.0
+ press=0.0
+ press_conv_thr=0.5
+/
+ATOMIC_SPECIES
+ O 15.9994 o_pbe_v1.2.uspp.F.UPF
+ C 12.0107 c_pbe_v1.2.uspp.F.UPF
+ H 1.00794 h_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+O      0.23310100    0.26637707    0.48710502
+O      0.04401612    0.42928094    0.62836404
+C      0.19843409    0.28149602    0.59081198
+C      0.35628902    0.10813296    0.66205601
+H      0.48299013   -0.00725402    0.61588403
+H      0.54417500    0.17405600    0.72816202
+H      0.15443214    0.03152407    0.70112202
+H      0.11470708    0.39364698    0.44307097
+O      0.76689904    0.76637700    1.01289605
+O      0.95598393    0.92928103    0.87163597
+C      0.80156595    0.78149595    0.90918803
+C      0.64371103    0.60813304    0.83794400
+H      0.51700992    0.49274607    0.88411598
+H      0.45582505    0.67405593    0.77183799
+H      0.84556791    0.53152400    0.79887799
+H      0.88529297    0.89364707    1.05692904
+O      0.76689898    0.73362405    0.51289502
+O      0.95598411    0.57071907    0.37163600
+C      0.80156610    0.71850400    0.40918798
+C      0.64371096    0.89186706    0.33794402
+H      0.51701010    1.00725403    0.38411600
+H      0.45582498    0.82594402    0.27183802
+H      0.84556810    0.96847595    0.29887801
+H      0.88529291    0.60635303    0.55692801
+O      0.23310119    0.23362302   -0.01289602
+O      0.04401602    0.07071899    0.12836398
+C      0.19843403    0.21850407    0.09081200
+C      0.35628793    0.39186698    0.16205604
+H      0.48299002    0.50725504    0.11588398
+H      0.54417493    0.32594393    0.22816204
+H      0.15443203    0.46847602    0.20112196
+H      0.11470696    0.10635295   -0.05692803
+K_POINTS automatic
+ 6 4 2 0 0 0
+CELL_PARAMETERS bohr
+  7.39751200   0.00000000   0.00000000 
+  0.00000000  12.07296300   0.00000000 
+ -3.49608900   0.00000000  23.18926500 
