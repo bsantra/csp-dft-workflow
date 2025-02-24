@@ -17,7 +17,7 @@ $SCHRODINGER/run $script1 ${fin}
 if [ $fin == "pbed3light.maegz" ];     then ecut=4.0; ncap=200; fnext=r2scand3light-in.maegz; fi
 if [ $fin == "r2scand3light.maegz" ];  then ecut=4.0; ncap=100; fnext=pbed3tight-in.maegz; fi
 if [ $fin == "pbed3tight.maegz" ];     then ecut=3.0;  ncap=50; fnext=r2scand3tight-in.maegz; fi
-if [ $fin == "r2scand3tight.maegz" ];  then ecut=3.0;  ncap=50; fi
+if [ $fin == "r2scand3tight.maegz" ];  then ecut=3.0;  ncap=50; fnext=dft-sorted-final.maegz; fi
 
 fout=${fin/.maegz/-filtered.maegz}
 $SCHRODINGER/run $script2 ${fin} -e $ecut -n $ncap -o ${fout} > ${fin/.maegz/.maegz.log}
