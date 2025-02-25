@@ -1,0 +1,31 @@
+
+Running subjobs on hosts:
+  compute-16core-64gb-preemptible (Max: 100)
+Number of jobs:       4
+Max retries per job:  5
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 3 | launched  c32ae9e1-f395-11ef-99ef-42010a668048 pbed3light_P21c_TSI_ACETAC_3_1750_0_vc-relax_0 compute-16core-64gb-preemptible []
+0 2 2 | launched  c322533b-f395-11ef-bad9-42010a668048 pbed3light_Pna21_SG_ACETAC_1_18_1_vc-relax_0 compute-16core-64gb-preemptible []
+0 3 1 | launched  c32faee7-f395-11ef-b349-42010a668048 pbed3light_Cc_GT_ACETAC_1_25_2_vc-relax_0 compute-16core-64gb-preemptible []
+0 4 0 | launched  c30dc4a3-f395-11ef-9845-42010a668048 pbed3light_P-1_ITTT_ACETAC_3_409_3_vc-relax_0 compute-16core-64gb-preemptible []
+1 3 0 | finished  c32faee7-f395-11ef-b349-42010a668048 pbed3light_Cc_GT_ACETAC_1_25_2_vc-relax_0 compute-16core-64gb-preemptible []
+2 2 0 | finished  c30dc4a3-f395-11ef-9845-42010a668048 pbed3light_P-1_ITTT_ACETAC_3_409_3_vc-relax_0 compute-16core-64gb-preemptible []
+3 1 0 | finished  c322533b-f395-11ef-bad9-42010a668048 pbed3light_Pna21_SG_ACETAC_1_18_1_vc-relax_0 compute-16core-64gb-preemptible []
+4 0 0 | finished  c32ae9e1-f395-11ef-99ef-42010a668048 pbed3light_P21c_TSI_ACETAC_3_1750_0_vc-relax_0 compute-16core-64gb-preemptible []
+
+All jobs have completed.
+
+4 of 4 job(s) succeeded; 0 job(s) failed.
+

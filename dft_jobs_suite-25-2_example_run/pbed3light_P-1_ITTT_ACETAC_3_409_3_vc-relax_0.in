@@ -1,0 +1,96 @@
+&CONTROL
+title='pbed3light_P-1_ITTT_ACETAC_3_409_3_vc-relax_0'
+calculation='vc-relax'
+restart_mode='from_scratch'
+prefix='pbed3light_P-1_ITTT_ACETAC_3_409_3_vc-relax_0'
+pseudo_dir='./'
+outdir='./'
+tstress=.false.
+tprnfor=.false.
+disk_io='low'
+max_seconds=10000000.0
+nstep=500
+etot_conv_thr=1.000000e-03
+forc_conv_thr=1.000000e-02
+iprint=100000
+dt=41.3414
+/
+&SYSTEM
+input_dft='PBE'
+vdw_corr='DFT-D3'
+dftd3_version=4
+dftd3_threebody=.true.
+nspin=1
+nbnd=34
+tot_charge=0.0
+tot_magnetization=-10000.0
+occupations='smearing'
+smearing='gaussian'
+degauss=0.01
+ecutwfc=50.0
+ecutrho=400.0
+nosym=.true.
+noinv=.false.
+use_all_frac=.false.
+ibrav=0
+ntyp=3
+nat=16
+starting_magnetization(1)=0.0
+starting_magnetization(2)=0.0
+starting_magnetization(3)=0.0
+/
+&ELECTRONS
+diagonalization='davidson'
+mixing_mode='plain'
+mixing_beta=0.2
+conv_thr=1e-06
+mixing_ndim=8
+electron_maxstep=200
+real_space=.false.
+diago_thr_init=0.0
+diago_full_acc=.false.
+diago_cg_maxiter=20
+/
+&IONS
+ion_dynamics='bfgs'
+refold_pos=.false.
+pot_extrapolation='atomic'
+wfc_extrapolation='none'
+ion_temperature='rescale-v'
+tempw=3.00000e+02
+delta_t=1.000000e+00
+nraise=1
+/
+&CELL
+cell_dynamics='bfgs'
+press=0.0
+cell_factor=2.0
+cell_dofree='all'
+/
+ATOMIC_SPECIES
+O 15.9994 o_pbe_v1.2.uspp.F.UPF
+C 12.0107 c_pbe_v1.2.uspp.F.UPF
+H 1.00794 h_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+O  0.45364298   0.00005600   0.74357799
+O  0.27796196   0.23704105   1.01314601
+C  0.30085995   0.18603197   0.83062893
+C  0.15548211   0.33137294   0.69181107
+H  0.36333695   0.39132296   0.61986593
+H -0.04086701   0.21923808   0.57053605
+H  0.04136795   0.48541899   0.77578000
+H  0.55613218  -0.09081601   0.84928205
+O  0.54635710   0.99994402   0.25642202
+O  0.72203813   0.76295896  -0.01314600
+C  0.69914009   0.81396800   0.16937093
+C  0.84451796   0.66862690   0.30818894
+H  0.63666309   0.60867701   0.38013393
+H  1.04086684   0.78076193   0.42946397
+H  0.95863188   0.51458102   0.22422001
+H  0.44386791   1.09081602   0.15071796
+CELL_PARAMETERS bohr
+  7.40371900   0.00000000   0.00000000
+ -0.53066500  10.95022800   0.00000000
+ -1.96428500  -3.26777900  12.52845700
+K_POINTS automatic
+6 4 3 0 0 0
